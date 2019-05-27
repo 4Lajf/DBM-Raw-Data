@@ -56,7 +56,7 @@
     },
     {
       "song": "${tempVars(\"input\")}",
-      "key": "UZy1aZtTUzSM8sC_HMa1QUVu5EBGR2PkI4S7ktbUUhuOlGuA83w32ody6AuDkbGo",
+      "key": "Your Genius API Key Here!",
       "info": "0",
       "storage": "1",
       "varName": "title",
@@ -64,7 +64,7 @@
     },
     {
       "song": "${tempVars(\"input\")}",
-      "key": "UZy1aZtTUzSM8sC_HMa1QUVu5EBGR2PkI4S7ktbUUhuOlGuA83w32ody6AuDkbGo",
+      "key": "Your Genius API Key Here!",
       "info": "1",
       "storage": "1",
       "varName": "artist",
@@ -72,7 +72,7 @@
     },
     {
       "song": "${tempVars(\"input\")}",
-      "key": "UZy1aZtTUzSM8sC_HMa1QUVu5EBGR2PkI4S7ktbUUhuOlGuA83w32ody6AuDkbGo",
+      "key": "Your Genius API Key Here!",
       "info": "2",
       "storage": "1",
       "varName": "lyrics",
@@ -80,7 +80,7 @@
     },
     {
       "song": "${tempVars(\"input\")}",
-      "key": "UZy1aZtTUzSM8sC_HMa1QUVu5EBGR2PkI4S7ktbUUhuOlGuA83w32ody6AuDkbGo",
+      "key": "Your Genius API Key Here!",
       "info": "3",
       "storage": "1",
       "varName": "url",
