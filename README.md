@@ -17,6 +17,7 @@ Includes:
 - Reconnect Voice
 - Now Playing
 - Lyrics (by me)
+
 Reconnect:
 This command resets the connection to resolve bugs.
 Lyrics:
