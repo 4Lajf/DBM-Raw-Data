@@ -6,6 +6,61 @@
   "actions": [
     {
       "server": "0",
+      "varName": "bot-mem",
+      "storage": "1",
+      "varName2": "bot-mem",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "I must be in a voice channel!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "2",
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must be in a voice channel!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
       "info": "5",
       "storage": "1",
       "varName": "queuelength",
@@ -32,47 +87,9 @@
       "name": "Check Variable"
     },
     {
-      "action": "0",
-      "name": "Control Audio"
-    },
-    {
-      "title": "",
-      "author": "",
-      "color": "df4444",
-      "timestamp": "true",
-      "url": "",
-      "authorIcon": "",
-      "imageUrl": "",
-      "thumbUrl": "https://watchbot.me/i/u/233536.png",
-      "storage": "1",
-      "varName": "embed",
-      "name": "Create Embed Message"
-    },
-    {
-      "storage": "1",
-      "varName": "embed",
-      "message": ":stop_button: The Bot has stopped playing music! Resume command will not work!",
-      "name": "Set Embed Description"
-    },
-    {
-      "storage": "1",
-      "varName": "embed",
-      "channel": "0",
-      "varName2": "",
-      "name": "Send Embed Message"
-    },
-    {
-      "action": "1",
-      "name": "Control Audio"
-    },
-    {
-      "time": "1",
-      "measurement": "1",
-      "name": "Wait"
-    },
-    {
-      "action": "2",
-      "name": "Control Audio"
+      "source": "ybFMy",
+      "type": "true",
+      "name": "Call Command/Event"
     },
     {
       "name": "End Action Sequence"
