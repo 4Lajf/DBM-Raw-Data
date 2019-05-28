@@ -24,7 +24,7 @@
       "name": "YouTube Search"
     },
     {
-      "title": ":musical_note: Now playing: ${tempVars(\"yt-title\")}",
+      "title": ":musical_note: Odtwarzam: ${tempVars(\"yt-title\")}",
       "author": "",
       "color": "e2e2e2",
       "url": "https://www.youtube.com/watch?v=${tempVars(\"song url\")}",
