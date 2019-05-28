@@ -1,9 +1,33 @@
 {
-  "name": "leave",
+  "name": "stop",
   "permissions": "NONE",
   "restriction": "1",
   "_id": "ybFMy",
   "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "bot-mem",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check If Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "mute": "1",
+      "name": "Set Member Mute"
+    },
     {
       "member": "1",
       "varName": "",
