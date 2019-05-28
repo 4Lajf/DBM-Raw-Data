@@ -5,6 +5,61 @@
   "_id": "bNWBy",
   "actions": [
     {
+      "server": "0",
+      "varName": "bot-mem",
+      "storage": "1",
+      "varName2": "bot-mem",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "I must be in a voice channel!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "2",
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must be in a voice channel!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
       "info": "0",
       "infoIndex": "1",
       "storage": "1",
@@ -13,13 +68,97 @@
     },
     {
       "condition": "0",
-      "comparison": "0",
+      "comparison": "2",
       "value": "1",
       "iftrue": "0",
       "iftrueVal": "",
-      "iffalse": "2",
-      "iffalseVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
       "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Wrong format!\n`volume <10-200>`",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "condition": "0",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Wrong format!\n`volume <10-200>`",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "volume",
+      "comparison": "4",
+      "value": "200",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "This is to loud! Maximum of 200% is allowed.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "volume",
+      "comparison": "3",
+      "value": "10",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "This is to quiet! Minimum of 10% is allowed!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "volume": "${tempVars(\"volume\")}",
@@ -29,11 +168,19 @@
       "title": "",
       "author": "",
       "color": "",
-      "timestamp": "true",
       "url": "",
       "authorIcon": "",
+      "authorUrl": "",
       "imageUrl": "",
       "thumbUrl": "",
+      "timestamp": "true",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
       "storage": "1",
       "varName": "embed",
       "name": "Create Embed Message"
@@ -50,14 +197,6 @@
       "channel": "0",
       "varName2": "",
       "name": "Send Embed Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "source": "YkvtJ",
-      "type": "true",
-      "name": "Call Command/Event"
     }
   ],
   "_aliases": [
