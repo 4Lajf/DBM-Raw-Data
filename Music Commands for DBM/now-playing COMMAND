@@ -17,7 +17,7 @@
       "input": "${tempVars(\"song url\")}",
       "info0": "2",
       "info1": "1",
-      "apikey": "AIzaSyAjvvdueuR59xl-VZFl2JM5Q_U5fqNBFnY",
+      "apikey": "INSERT YOUR YOUTUBE API KEY HERE",
       "results": "1",
       "storage": "1",
       "varName": "yt-title",
