@@ -5,6 +5,79 @@
   "_id": "fEOZz",
   "actions": [
     {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "bot-mem",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "11",
+      "storage": "1",
+      "varName2": "is-muted",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "1",
+      "varName": "is-muted",
+      "comparison": "1",
+      "value": "true",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Music is already paused!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check If Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "mute": "0",
+      "name": "Set Member Mute"
+    },
+    {
+      "count": "2",
+      "name": "Skip Actions"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Nothing is playing!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
       "action": "1",
       "name": "Control Audio"
     },
