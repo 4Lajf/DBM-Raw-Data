@@ -5,46 +5,6 @@
   "_id": "qmTsw",
   "actions": [
     {
-      "server": "0",
-      "info": "5",
-      "storage": "1",
-      "varName": "q-length",
-      "varName2": "",
-      "name": "Store Audio Info"
-    },
-    {
-      "storage": "1",
-      "varName": "q-length",
-      "conversion": "2",
-      "storage2": "1",
-      "varName2": "string-q-length",
-      "name": "Convert Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "string-q-length",
-      "comparison": "1",
-      "value": "0",
-      "iftrue": "0",
-      "iftrueVal": "",
-      "iffalse": "3",
-      "iffalseVal": "2",
-      "name": "Check Variable"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "❔ **There is nothing in queue, add something with `'play`",
-      "storage": "0",
-      "varName2": "",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
       "title": "Current Queue List:",
       "author": "",
       "color": "e2e2e2",
