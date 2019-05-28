@@ -6,6 +6,37 @@
   "actions": [
     {
       "server": "0",
+      "varName": "bot-mem",
+      "storage": "1",
+      "varName2": "bot-mem",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Nothing is playing!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
       "info": "9",
       "storage": "1",
       "varName": "song url",
@@ -13,18 +44,37 @@
       "name": "Store Audio Info"
     },
     {
+      "member": "1",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "mem-dis-name",
+      "name": "Store Member Info"
+    },
+    {
       "type": "0",
       "input": "${tempVars(\"song url\")}",
       "info0": "2",
       "info1": "1",
-      "apikey": "INSERT YOUR YOUTUBE API KEY HERE",
+      "apikey": "AIzaSyAjvvdueuR59xl-VZFl2JM5Q_U5fqNBFnY",
       "results": "1",
       "storage": "1",
       "varName": "yt-title",
       "name": "YouTube Search"
     },
     {
-      "title": ":musical_note: Odtwarzam: ${tempVars(\"yt-title\")}",
+      "type": "0",
+      "input": "${tempVars(\"yt-title\")}",
+      "info0": "17",
+      "info1": "1",
+      "apikey": "AIzaSyAjvvdueuR59xl-VZFl2JM5Q_U5fqNBFnY",
+      "results": "1",
+      "storage": "1",
+      "varName": "yt-duration",
+      "name": "YouTube Search"
+    },
+    {
+      "title": "Odtwarzam ♪: ${tempVars(\"yt-title\")}",
       "author": "",
       "color": "e2e2e2",
       "url": "https://www.youtube.com/watch?v=${tempVars(\"song url\")}",
@@ -43,6 +93,12 @@
       "storage": "1",
       "varName": "embed",
       "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Duration: `${tempVars(\"yt-duration\")}`\n\n`Dodane przez:` ${tempVars(\"mem-dis-name\")}",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
