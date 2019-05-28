@@ -34,7 +34,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "❔ **Info:** Nie ma nic w kolejce! Dodaj utwór komendą `'play`",
+      "message": "❔ **There is nothing in queue, add something with `'play`",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
