@@ -5,15 +5,26 @@
   "_id": "MiROO",
   "actions": [
     {
-      "storage": "2",
-      "varName": "title",
-      "conversion": "2",
-      "storage2": "1",
-      "varName2": "title-lyrics",
-      "name": "Convert Variable"
+      "server": "0",
+      "info": "9",
+      "storage": "1",
+      "varName": "song url",
+      "varName2": "",
+      "name": "Store Audio Info"
     },
     {
-      "title": "Searching for \"${tempVars(\"title-lyrics\")}\" on genius.com",
+      "type": "0",
+      "input": "${tempVars(\"song url\")}",
+      "info0": "2",
+      "info1": "1",
+      "apikey": "Your_YouTube_API_Key_Here!",
+      "results": "1",
+      "storage": "1",
+      "varName": "yt-title",
+      "name": "YouTube Search"
+    },
+    {
+      "title": "Searching for \"${tempVars(\"yt-title\")}\" on genius.com",
       "author": "",
       "color": "FFFF00",
       "url": "",
@@ -43,7 +54,7 @@
       "name": "Send Embed Message"
     },
     {
-      "song": "${tempVars(\"title-lyrics\")}",
+      "song": "${tempVars(\"yt-title\")}",
       "key": "Your Genius API Key Here!",
       "info": "0",
       "storage": "1",
@@ -51,7 +62,7 @@
       "name": "Get Song Lyrics"
     },
     {
-      "song": "${tempVars(\"title-lyrics\")}",
+      "song": "${tempVars(\"yt-title\")}",
       "key": "Your Genius API Key Here!",
       "info": "1",
       "storage": "1",
@@ -59,7 +70,7 @@
       "name": "Get Song Lyrics"
     },
     {
-      "song": "${tempVars(\"title-lyrics\")}",
+      "song": "${tempVars(\"yt-title\")}",
       "key": "Your Genius API Key Here!",
       "info": "2",
       "storage": "1",
@@ -67,7 +78,7 @@
       "name": "Get Song Lyrics"
     },
     {
-      "song": "${tempVars(\"title-lyrics\")}",
+      "song": "${tempVars(\"yt-title\")}",
       "key": "Your Genius API Key Here!",
       "info": "3",
       "storage": "1",
