@@ -12,15 +12,49 @@
       "name": "Get Bot as Member"
     },
     {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "author-vc",
+      "name": "Store Member Things"
+    },
+    {
       "member": "2",
       "varName": "bot-mem",
-      "info": "4",
+      "info": "1",
+      "storage": "1",
+      "varName2": "bot-vc",
+      "name": "Store Member Things"
+    },
+    {
+      "storage": "1",
+      "varName": "author-vc",
+      "comparison": "1",
+      "value": "tempVars(\"bot-vc\")",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Error: You must be in the same voice channel as bot.",
+      "storage": "0",
       "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "3",
-      "iffalseVal": "2",
-      "name": "Check If Member"
+      "iffalseVal": "1",
+      "name": "Check is Bot in Voice Channel"
     },
     {
       "member": "2",
@@ -29,35 +63,8 @@
       "name": "Set Member Mute"
     },
     {
-      "member": "1",
-      "varName": "",
-      "info": "4",
-      "varName2": "",
       "iftrue": "3",
-      "iftrueVal": "3",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check If Member"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Error: You must be in a voice channel",
-      "storage": "0",
-      "varName2": "",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "iftrue": "3",
-      "iftrueVal": "3",
+      "iftrueVal": "2",
       "iffalse": "0",
       "iffalseVal": "2",
       "name": "Check is Bot in Voice Channel"
@@ -71,9 +78,6 @@
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
     },
     {
       "name": "End Action Sequence"
@@ -97,6 +101,13 @@
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Send Message"
+    },
+    {
+      "storage": "2",
+      "varName": "is-paused",
+      "changeType": "0",
+      "value": "false",
+      "name": "Control Variable"
     }
   ],
   "_aliases": [
