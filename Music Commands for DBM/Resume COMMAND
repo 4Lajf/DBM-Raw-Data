@@ -2,7 +2,7 @@
   "name": "resume",
   "permissions": "NONE",
   "restriction": "1",
-  "_id": "fEOZz",
+  "_id": "resume",
   "actions": [
     {
       "server": "0",
@@ -10,6 +10,44 @@
       "storage": "1",
       "varName2": "bot-mem",
       "name": "Get Bot as Member"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "author-vc",
+      "name": "Store Member Things"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "1",
+      "storage": "1",
+      "varName2": "bot-vc",
+      "name": "Store Member Things"
+    },
+    {
+      "storage": "1",
+      "varName": "author-vc",
+      "comparison": "1",
+      "value": "tempVars(\"bot-vc\")",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Error: You must be in the same voice channel as bot.",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "member": "2",
@@ -96,6 +134,13 @@
       "channel": "0",
       "varName2": "",
       "name": "Send Embed Message"
+    },
+    {
+      "storage": "2",
+      "varName": "is-paused",
+      "changeType": "0",
+      "value": "false",
+      "name": "Control Variable"
     }
   ],
   "_aliases": [
