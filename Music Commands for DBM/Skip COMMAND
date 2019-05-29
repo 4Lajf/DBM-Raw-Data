@@ -6,54 +6,44 @@
   "actions": [
     {
       "server": "0",
-      "varName": "bot-mem",
+      "varName": "",
       "storage": "1",
       "varName2": "bot-mem",
       "name": "Get Bot as Member"
     },
     {
-      "member": "2",
-      "varName": "bot-mem",
-      "info": "4",
-      "varName2": "",
-      "iftrue": "3",
-      "iftrueVal": "2",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check If Member"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "I must be in a voice channel!",
-      "storage": "0",
-      "varName2": "",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
       "member": "1",
       "varName": "",
-      "info": "4",
-      "varName2": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "author-vc",
+      "name": "Store Member Things"
+    },
+    {
+      "member": "2",
+      "varName": "bot-mem",
+      "info": "1",
+      "storage": "1",
+      "varName2": "bot-vc",
+      "name": "Store Member Things"
+    },
+    {
+      "storage": "1",
+      "varName": "author-vc",
+      "comparison": "1",
+      "value": "tempVars(\"bot-vc\")",
       "iftrue": "3",
       "iftrueVal": "2",
       "iffalse": "0",
-      "iffalseVal": "2",
-      "name": "Check If Member"
+      "iffalseVal": "",
+      "name": "Check Variable"
     },
     {
       "channel": "0",
       "varName": "",
-      "message": "You must be in a voice channel!",
+      "message": "Error: You must be in the same voice channel as bot.",
       "storage": "0",
       "varName2": "",
-      "iffalse": "0",
-      "iffalseVal": "",
       "name": "Send Message"
     },
     {
@@ -82,8 +72,8 @@
       "value": "0",
       "iftrue": "0",
       "iftrueVal": "",
-      "iffalse": "2",
-      "iffalseVal": "12",
+      "iffalse": "3",
+      "iffalseVal": "2",
       "name": "Check Variable"
     },
     {
