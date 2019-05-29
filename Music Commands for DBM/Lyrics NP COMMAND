@@ -5,55 +5,18 @@
   "_id": "MiROO",
   "actions": [
     {
-      "server": "0",
-      "varName": "bot-mem",
-      "storage": "1",
-      "varName2": "bot-mem",
-      "name": "Get Bot as Member"
-    },
-    {
-      "member": "2",
-      "varName": "bot-mem",
-      "info": "4",
-      "varName2": "",
       "iftrue": "3",
       "iftrueVal": "2",
       "iffalse": "0",
       "iffalseVal": "",
-      "name": "Check If Member"
+      "name": "Check is Bot in Voice Channel"
     },
     {
       "channel": "0",
       "varName": "",
-      "message": "I must be in a voice channel!",
+      "message": "You must play something to see nowplaying lyrics!",
       "storage": "0",
       "varName2": "",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "member": "1",
-      "varName": "",
-      "info": "4",
-      "varName2": "",
-      "iftrue": "3",
-      "iftrueVal": "2",
-      "iffalse": "0",
-      "iffalseVal": "2",
-      "name": "Check If Member"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "You must be in a voice channel!",
-      "storage": "0",
-      "varName2": "",
-      "iffalse": "0",
-      "iffalseVal": "",
       "name": "Send Message"
     },
     {
