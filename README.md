@@ -34,3 +34,5 @@ Genius API Tutorial:
 2. Visit link http://genius.com/api-clients
 3. Register your aplication
 4. Copy your API key and insert it in "Search Lyrcis" actions in "Lyrics" command.
+
+P.S For now it can't play age restricted videos.
