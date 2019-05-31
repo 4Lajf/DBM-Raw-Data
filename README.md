@@ -1,5 +1,7 @@
 # Updated Music Commands
 
+## For now you must download store_member_info_MOD.js to your bot's actions directory. I'll update this asap.
+
 ***All credits go to arkhunter. I just made it work with current version of DBM.***
 
 Complete music system complete with Queue!
