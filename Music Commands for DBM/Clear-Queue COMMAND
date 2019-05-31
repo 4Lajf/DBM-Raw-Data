@@ -14,18 +14,18 @@
     {
       "member": "1",
       "varName": "",
-      "info": "1",
+      "info": "19",
       "storage": "1",
       "varName2": "author-vc",
-      "name": "Store Member Things"
+      "name": "Store Member Info"
     },
     {
       "member": "2",
       "varName": "bot-mem",
-      "info": "1",
+      "info": "19",
       "storage": "1",
       "varName2": "bot-vc",
-      "name": "Store Member Things"
+      "name": "Store Member Info"
     },
     {
       "storage": "1",
